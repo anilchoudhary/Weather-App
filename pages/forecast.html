@@ -15,6 +15,8 @@ Forecast for {{ city }}
                   </h6>
                 </div>
                 <div class="list-group list-group-flush">
+                    <div class="list-group-item"> Current Temperature: {{ convertToCelsius(w.main.temp) }}&#8451;  
+                    </div>
                     <div class="list-group-item"> Minimum Temperature: {{ convertToCelsius(w.main.temp_min) }}&#8451;  
                     </div>
                     <div class="list-group-item"> Maximum Temperature: {{ convertToCelsius(w.main.temp_max) }}&#8451;  
